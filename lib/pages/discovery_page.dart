@@ -1,3 +1,4 @@
+import 'package:discover/components/gradient_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:discover/model/item_model.dart';
 import 'package:discover/services/api_service.dart';
@@ -82,9 +83,12 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Discovery Page'),
+      appBar: GradientAppBar(
+        gradientBegin: Color.fromARGB(255, 249, 74, 74),
+        gradientEnd: const Color.fromARGB(255, 249, 126, 126),
+        title: "Discoverrr",
       ),
+
       body: RefreshIndicator(
         onRefresh: _refresh,
         child: ListView.builder(
