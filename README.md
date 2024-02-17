@@ -1,1 +1,5 @@
-# discover
+# Flutter Discovery Page
+
+The Flutter Discovery Page is a sample Flutter app that demonstrates the implementation of a paginated list view with infinite scrolling. The app fetches data from a mock API and displays items in a visually appealing card format.
+
+
